@@ -382,13 +382,15 @@ public class MyApp {
 	}
 	
 	public static void main(String[] args){
+//		System.out.println("there on git");
+		System.out.println("weclome!");
 		MyApp a=new MyApp();
 		boolean b;
 		Scanner s=new Scanner(System.in);
 		String str;
     	str=s.nextLine();//以字符串的形式读入多项式
-//    	double time1 = System.currentTimeMillis();
-//    	System.out.println("处理字符串开始的时间为:"+time1/60+"秒");
+    	double time1 = System.currentTimeMillis();
+    	System.out.println("处理字符串开始的时间为:"+time1/60+"秒");
     	String str_o="";
     	int f=0;
     	for(int i=0;i<str.length();i++)//处理空格和制表符
@@ -412,10 +414,10 @@ public class MyApp {
 		}
 		else
 			System.out.println("您输入的表达式不合法！");
-//		double time2 = System.currentTimeMillis();
-//    	System.out.println("处理字符串结束的时间为:"+time2/60+"秒");
-//    	double time3 = time2-time1;
-//    	System.out.println("处理字符串的总时间为:"+time3/60+"秒");
+		double time2 = System.currentTimeMillis();
+    	System.out.println("处理字符串结束的时间为:"+time2/60+"秒");
+    	double time3 = time2-time1;
+    	System.out.println("处理字符串的总时间为:"+time3/60+"秒");
 		
 		String order1="!simplify ";
 		String order2="!d/d";
